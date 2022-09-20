@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="board.css">
+    <style>
+        #button {
+            background: white;
+            color: green;
+            text-align: center;
+            float: center;
+        }
+        .block {
+            background: yellow;
+        }
+        td {
+            text-align: center;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table border="1">
+            <tr>
+                <td style="background: lime; text-align: center;" >항목</td>
+                <td style="background: lime; text-align: center;">입력</td>
+            </tr>
+            <tr>
+                <td>번호</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>제목</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>작성자</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="block"><input type="submit" value="글쓰기 완료." id="button"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
