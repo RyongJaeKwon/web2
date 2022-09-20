@@ -12,4 +12,5 @@
 | ----- | -------- |
 
 <br>
-<img src="C:/Users/kwon/Documents/web-workspace/day01/img/.png">
+<img src="https://event.multicampus.com/backend/images/promotion/PR010149/pc/visual-06.png">
+
