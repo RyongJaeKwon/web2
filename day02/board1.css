@@ -1,0 +1,18 @@
+/* ctrl + / 자동주석 */
+/* 기본선택자 : 태그, id, class */
+body {      /* 태그이름 */
+    color: blue;
+}
+
+.c1 {       /* .클래스명 */
+    background: lime;
+}
+
+#foot {     /* #아이디 */
+    background: yellow;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}

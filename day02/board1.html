@@ -5,20 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="board.css">
+    <link rel="stylesheet" href="board1.css">
     <style>
-        #button {
+        button {
             background: white;
             color: green;
-            text-align: center;
-            float: center;
+            font-weight: bold;
         }
-        .block {
-            background: yellow;
+        input {
+            background: pink;
         }
-        td {
-            text-align: center;
-            color: blue;
+        td:hover {
+            background: lemonchiffon;
         }
     </style>
 </head>
@@ -26,8 +24,8 @@
     <form>
         <table border="1">
             <tr>
-                <td style="background: lime; text-align: center;" >항목</td>
-                <td style="background: lime; text-align: center;">입력</td>
+                <td class="c1" style="color: black;">항목</td>
+                <td class="c1" style="color: purple;">입력</td>
             </tr>
             <tr>
                 <td>번호</td>
@@ -46,7 +44,9 @@
                 <td><input type="text" name="writer"></td>
             </tr>
             <tr>
-                <td colspan="2" class="block"><input type="submit" value="글쓰기 완료." id="button"></td>
+                <td colspan="2" id="foot">
+                    <button>서버로 전송</button>
+                </td>
             </tr>
         </table>
     </form>
