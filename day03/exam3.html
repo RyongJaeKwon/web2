@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pay() {
+            store = document.getElementById('store').value
+            cost = document.getElementById('cost').value
+            key = document.getElementById('way').value
+
+            cost = parseInt(cost)
+
+            if(key == 1) {
+                result = cost
+            }else if(key == 2) {
+                result = cost + 1000
+            }else {
+                result = cost + 500
+            }
+
+            d1.innerHTML = store + '에서 ' + result + '원을 결제수단 ' + key + '번으로 결제했습니다.'
+        }
+    </script>
+</head>
+<body>
+    구매상점: <input type="text" id="store"> <br>
+    결제금액: <input type="text" id="cost"> <br>
+    입력수단 (1)계좌이체, (2)신용카드, (3)휴대폰결제 <br>
+    <input type="text" id="way"> <br>
+    <button id="btn1" onclick="pay()">결제 버튼</button>
+
+    <hr color="blue">
+
+    <div id="d1"></div>
+
+</body>
+</html>
