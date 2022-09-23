@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(function() {
+            // 결제하기 버튼
+            $('#b1').click(function() {
+                money = $('#money').val()
+                way = $('#way').val()
+
+                if (way == 1) {
+                    total = money - (money * 0.2)
+                    $('#d1').html('결제금액 : ' + total)
+                }else if(way == 2){
+                    total = money - (money * 0.1)
+                    $('#d1').html('결제금액 : ' + total)
+                }else {
+                    $('#d1').html('결제금액 : ' + money)
+                }
+            })
+
+            // id중복체크 버튼
+            
+
+        })
+    </script>
+</head>
+<body>
+    결제금액 : <input id="money"> <br>
+    1)계좌이체, 2)신용카드, 3)휴대폰결제 <br>
+    결제수단 : <input id="way">
+    <button id="b1" style="background-color: green; color: blue;">결제하기</button>
+    
+    <hr color="red">
+    
+    회원가입할 id입력 : <input id="id">
+    <button id="b2" style="background-color: yellow; color: blue; ">회원가입시 id 중복체크</button> <br>
+    
+    <hr color="red">
+
+    인증받을 전화번호 입력 : <input id="tel">
+    <button id="b3" style="background-color: pink; color: blue; ">인증번호 받기</button> <br>
+
+    <hr color="green">
+
+    <div id="d1"></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('#b1').click(function() {
+                $('#d1').append('<img src=red.png width=200px height=200px>')
+            })
+
+            $('#b2').click(function() {
+                write1 = $('#n1').val()
+                $('#d1').append(write1 + "<br>")
+            })
+
+            $('#b3').click(function() {
+                write2 = $('#n2').val()
+                $('#d1').append('<img src=red.png width=100px height=100px>')
+                $('#d1').append(write2 + '<br>')
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="b1">이미지 추가</button> <br>
+    댓글1: <input id="n1">
+    <button id="b2">댓글 추가</button> <br>
+    댓글2: <input id="n2">
+    <button id="b3">이미지+댓글 추가</button>
+    <hr color="red">
+    <div id="d1"></div>
+</body>
+</html>
